@@ -32,18 +32,35 @@ let empChecking = seniorBanker[1]
 let empYears = seniorBanker[2];   
 */
 
+/* let juniorBanker = [66225, 2, 5]; 
+ let empId = juniorBanker[0]
+ let empChecking = juniorBanker[1]
+ /let empYears = juniorBanker[2];
+ */
+
+/* let tempBanker = [56677, 5, 3]; 
+let empId = tempBanker[0]
+let empChecking = tempBanker[1]
+let empYears = tempBanker[2];
+*/
+
+/* let midBanker = [22151, 2, 0]; 
+let empId = midBanker[0]
+let empChecking = midBanker[1]
+let empYears = midBanker[2];
+*/
 
 //<--Your code goes here-->
 
 if (empYears < 1) {
-    if (empChecking === 1) {
+    if (empChecking >= 1) {
         console.log("Ship $50.00 Gift Card");
     }
     else {
         console.log("Incentives not met")
     }
 }
-else if (empYears === 2) {
+else if (empYears == 2) {
     if (empChecking >= 3) {
         console.log("Ship $400.00 Gift Card");
     }
@@ -51,7 +68,7 @@ else if (empYears === 2) {
         console.log("Ship $100.00 Gift Card")
     }
 }
-else if (empYears === 3) {
+else if (empYears == 3) {
     if (empChecking >= 2) {
         console.log("Ship $700.00 Gift Card");
     }
@@ -59,13 +76,16 @@ else if (empYears === 3) {
         console.log("Ship $350.00 Gift Card")
     }
 }
-else if (empYears === 4) {
-    if (empChecking >= 1) {
+else if (empYears == 4) {
+    if (empChecking !== 0) {
         console.log("Ship $3500.00 Gift Card");
     }
     else {
         console.log("Ship set of knives")
     }
+}
+else if (empYears == 0) {
+    console.log('Not eligible for gift');
 }
 
 
